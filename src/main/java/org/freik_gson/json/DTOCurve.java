@@ -8,4 +8,10 @@ import java.util.List;
 public class DTOCurve {
     public List<RValue<DTOPose>> points;
     public RValue<Interpolator> interpolation; // nullable
+
+    public DTOCurve(List<RValue<DTOPose>> points, RValue<Interpolator> heading) {
+        this.points = points;
+        this.interpolation = heading;
+    }
+    public DTOCurve() {}
 }

@@ -10,4 +10,11 @@ public class FacingPoint extends Interpolator {
     }
 
     public RValue<DTOPose> point;
+    public FacingPoint(DTOPose point) {
+        this.point = new RValue<>(point);
+    }
+    public FacingPoint(String ref) {
+        this.point = new RValue<>(ref);
+    }
+    public FacingPoint() {}
 }
